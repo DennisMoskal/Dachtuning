@@ -265,7 +265,7 @@ export default function DachtuningSite() {
       <section className="py-20 bg-gradient-to-b from-black to-zinc-900 border-t-4 border-orange-600">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl text-white font-bold mb-4">Unsere Betriebsstätten</h2>
+            <h2 className="text-5xl md:text-6xl text-white font-bold mb-4">Unsere Standorte</h2>
             <div className="h-1 w-40 bg-gradient-to-r from-transparent via-orange-600 to-transparent mx-auto" />
           </div>
 
