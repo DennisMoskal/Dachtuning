@@ -1,6 +1,4 @@
-<button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider">
-                Kostenlose Beratung
-              </button>'use client';
+'use client';
 
 import { Play, Home, Shield, Droplet, Paintbrush, Building2, Sun, PhoneCall, Mail, MapPin, Clock, FileText, Wrench, Users, Award, Sparkles, Droplets, CheckCircle, Star, ArrowRight, Phone } from "lucide-react";
 import { useState } from "react";
@@ -42,7 +40,7 @@ export default function DachtuningSite() {
       title: "Nanotech-Beschichtung",
       subtitle: "Hochwertige Oberflächenversiegelung",
       icon: Shield,
-      content: "Für eine dauerhaft sichere Abdichtung Ihres Daches bietet sich eine Dachbeschichtung aus hochwertigem Flüssigkunststoff an. Das Verfahren ist sowohl für Privathäuser als auch für Industriebauten geeignet und bietet ein Höchstmaß an Sicherheit und Wirtschaftlichkeit. Eine Dachsanierung mit Flüssigkunststoff ist schnell und effizient realisiert.",
+      content: "Für eine dauerhaft sichere Abdichtung Ihres Daches bietet sich eine Dachbeschichtung aus hochwertigem Flüssigkunststoff an. Das Verfahren ist sowohl für Privathäuser als auch für Industriebauten geeignet und bietet ein Höchstmaß an Sicherheit und Wirtschaftlichkeit.",
       image: "/Nanotech-Beschichtung.png",
       benefits: ["20 Jahre Schutz", "Wetterbeständig", "Umweltfreundlich"]
     },
@@ -76,7 +74,7 @@ export default function DachtuningSite() {
       icon: Sparkles,
       content: "Durch schädigende Einflüsse aus der Atmosphäre verliert die Außenfassade eines Hauses ihr gutes Aussehen. Wir reinigen Ihre Fassade und versiegeln sie mit Profi-Standard für langanhaltende Sauberkeit.",
       image: "/Fassadenreinigung.png",
-      benefits: ["Tiefenwirkung", "Langzeitefekt", "Profi-Versiegelung"]
+      benefits: ["Tiefenwirkung", "Langzeiteffekt", "Profi-Versiegelung"]
     },
     {
       title: "Flüssigkunststoff",
@@ -303,8 +301,8 @@ export default function DachtuningSite() {
                         </div>
                       ))}
                     </div>
-                    <button className="w-full px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white text-xs uppercase font-bold tracking-wider hover:shadow-lg hover:shadow-orange-600/50 transition-all rounded hover:from-orange-700 hover:to-orange-600 flex items-center justify-center gap-2">
-                      Mehr Erfahren <ArrowRight className="w-3 h-3" />
+                    <button className="w-full px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white text-xs uppercase font-bold tracking-wider hover:shadow-lg hover:shadow-orange-600/50 transition-all rounded hover:from-orange-700 hover:to-orange-600">
+                      Mehr Erfahren
                     </button>
                   </div>
                 </div>
@@ -437,81 +435,4 @@ export default function DachtuningSite() {
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Über uns</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Unser Team</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Referenzen & Portfolio</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Standorte</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Karriere</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Blog & Tipps</a></li>
-              </ul>
-            </div>
-
-            {/* Support & Legal */}
-            <div>
-              <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
-                <Award className="w-5 h-5 text-orange-500" />
-                Service & Rechtliches
-              </h4>
-              <ul className="space-y-3 text-sm text-zinc-400">
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Häufig gestellte Fragen</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Angebotsanfrage</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Wartungsservice</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Datenschutz</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Impressum</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">AGB</a></li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Contact Info Bar */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12 p-6 md:p-8 bg-gradient-to-r from-orange-600/10 to-transparent rounded-xl border-2 border-orange-600/30">
-            <div className="flex items-start gap-4">
-              <PhoneCall className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
-              <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">Telefonische Beratung</p>
-                <p className="text-white font-bold text-lg">+49 (0) 123 456789</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Mail className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
-              <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">E-Mail</p>
-                <p className="text-white font-bold">info@dachtuning.de</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Clock className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
-              <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">Verfügbarkeit</p>
-                <p className="text-white font-bold">Mo-Fr 8:00 - 18:00 Uhr</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Footer */}
-          <div className="border-t border-zinc-800 pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between mb-6">
-              <div className="text-center md:text-left mb-4 md:mb-0">
-                <p className="text-zinc-400 text-xs font-mono uppercase tracking-wider">
-                  © 1999 - 2025 Dachtuning.de • Alle Rechte vorbehalten
-                </p>
-                <p className="text-zinc-500 text-xs mt-2">
-                  Familie im Betrieb • 26 Jahre erfolgreiche Handwerkskunst • TÜV zertifiziert
-                </p>
-              </div>
-              <div className="flex items-center gap-6 text-xs text-zinc-500">
-                <a href="#" className="hover:text-orange-500 transition-colors font-bold">Datenschutz</a>
-                <span className="text-zinc-700">•</span>
-                <a href="#" className="hover:text-orange-500 transition-colors font-bold">Impressum</a>
-                <span className="text-zinc-700">•</span>
-                <a href="#" className="hover:text-orange-500 transition-colors font-bold">AGB</a>
-              </div>
-            </div>
-            <div className="text-center pt-6 border-t border-zinc-800">
-              <p className="text-zinc-600 text-xs font-mono">
-                🇩🇪 Made with ❤️ in Germany • Vertrauenswürdig seit 1999
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Standorte</a></li
