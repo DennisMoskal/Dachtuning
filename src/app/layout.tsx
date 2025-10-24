@@ -5,7 +5,7 @@ import ClientBody from "./ClientBody";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const unifraktur = UnifrakturCook({
-  weight: "700",
+  weight: "400",
   subsets: ["latin"],
   variable: "--font-unifraktur"
 });
