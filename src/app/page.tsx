@@ -152,7 +152,7 @@ export default function DachtuningSite() {
             <div className="flex items-center gap-2">
               <button className="hidden sm:flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white uppercase font-bold text-xs md:text-sm tracking-wider hover:shadow-lg hover:shadow-orange-600/50 transition-all rounded hover:from-orange-700 hover:to-orange-600 flex-shrink-0">
                 <PhoneCall className="w-4 h-4 md:w-5 md:h-5" />
-                <span className="hidden sm:inline">Kostenlose Beratung</span>
+                <span className="hidden sm:inline">0800 3228864</span>
               </button>
               <button className="sm:hidden flex items-center justify-center w-10 h-10 bg-gradient-to-r from-orange-600 to-orange-500 text-white hover:shadow-lg hover:shadow-orange-600/50 transition-all rounded flex-shrink-0">
                 <PhoneCall className="w-5 h-5" />
