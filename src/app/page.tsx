@@ -132,11 +132,11 @@ export default function Home() {
               Dachtuning.de
             </h2>
             <p className="text-2xl text-zinc-300 uppercase tracking-widest font-bold">
-              Ihr Dachunternehmen in Paderborn
+              Ihr Top-Dachunternehmen für die Regionen Bremen, Leipzig, Paderborn, Schwaan
             </p>
             <div className="mt-6 flex items-center justify-center gap-4">
               <div className="h-1 w-20 bg-gradient-to-r from-transparent via-orange-600 to-transparent" />
-              <p className="text-orange-500 font-mono uppercase text-sm tracking-wider">Hart • Professionell • Zuverlässig</p>
+              <p className="text-orange-500 font-mono uppercase text-sm tracking-wider">STARK • PROFESSIONELL • ZUVERLÄSSIG</p>
               <div className="h-1 w-20 bg-gradient-to-r from-transparent via-orange-600 to-transparent" />
             </div>
           </div>
