@@ -196,9 +196,6 @@ export default function DachtuningSite() {
               Professionelle Dachsanierung und Fassadenarbeiten für Bremen, Leipzig, Paderborn und Schwaan
             </p>
             <div className="flex items-center justify-center gap-6 mt-8 flex-wrap">
-              <button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider flex items-center gap-2">
-                Kostenlose Beratung <ArrowRight className="w-4 h-4" />
-              </button>
               <button className="px-8 py-3 border-2 border-orange-600 text-orange-400 font-bold rounded hover:bg-orange-600/10 transition-all uppercase text-sm tracking-wider">
                 Mehr erfahren
               </button>
@@ -225,8 +222,8 @@ export default function DachtuningSite() {
                   </div>
                 </div>
                 <div className="p-4 bg-gradient-to-b from-zinc-800 to-black border-t border-orange-600/20">
-                  <h3 className="text-white font-bold text-sm leading-snug mb-1">{video.title}</h3>
-                  <p className="text-zinc-400 text-xs font-mono">{video.description}</p>
+                  <h3 className="text-white font-bold text-sm leading-snug mb-2">{video.title}</h3>
+                  <p className="text-zinc-400 text-xs">{video.description}</p>
                 </div>
               </div>
             ))}
