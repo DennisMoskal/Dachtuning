@@ -141,7 +141,7 @@ export default function DachtuningSite() {
                 />
               </div>
               <div className="min-w-0">
-                <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wide truncate">
+                <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wide truncate" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700', letterSpacing: '0.05em' }}>
                   Dachtuning.de
                 </h1>
                 <p className="text-zinc-400 text-xs mt-0.5 md:mt-1 font-mono uppercase tracking-widest truncate">
@@ -189,7 +189,7 @@ export default function DachtuningSite() {
             <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
               🏆 Seit 26 Jahren Ihre Vertrauensperson
             </div>
-            <h2 className="text-5xl md:text-7xl mb-6 text-white font-bold tracking-tight">
+          <h2 className="text-5xl md:text-7xl mb-6 text-white font-bold tracking-tight">
               Dachtuning
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-6 max-w-3xl mx-auto">
