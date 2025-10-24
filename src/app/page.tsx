@@ -1,4 +1,4 @@
-import { Play, Home, Shield, Droplet, Paintbrush, Building2, Sun, PhoneCall, Mail, MapPin, Clock, FileText, Wrench, Users, Award } from "lucide-react";
+import { Play, Home, Shield, Droplet, Paintbrush, Building2, Sun, PhoneCall, Mail, MapPin, Clock, FileText, Wrench, Users, Award, Sparkles, Droplets } from "lucide-react";
 
 export default function DachtuningSite() {
   const videos = [
@@ -25,39 +25,66 @@ export default function DachtuningSite() {
   const services = [
     {
       title: "Dachsanierung",
-      description: "Umfassende Renovierung für Ihr Dach",
+      subtitle: "Eine Dachsanierung die sich sehen lassen kann",
       icon: Home,
-      content: "Wer einen Altbau kauft oder besitzt, steht irgendwann vor der Frage wann eine Dachsanierung fällig ist. Offensichtliche wie abgefallene oder verrutschte Dachziegel und auch weniger auffällige wie Schimmelbefall sind Anzeichen für notwendige Reparaturen."
+      content: "Wer einen Altbau kauft oder besitzt, steht irgendwann vor der Frage wann eine Dachsanierung fällig ist. Es gibt einige Anzeichen dafür, wann das der Fall sein sollte. Offensichtliche wie abgefallene oder verrutschte Dachziegel und auch weniger auffällige wie Schimmelbefall, morsche Bestandteile oder nicht fest sitzende Ziegel.",
+      image: "public/Dachsanierung.png"
     },
     {
       title: "Nanotech-Beschichtung",
-      description: "Hochwertige Oberflächenschutzbehandlung",
+      subtitle: "Nanotechnik als Beschichtung für Ihr Dach",
       icon: Shield,
-      content: "Für eine dauerhaft sichere Abdichtung Ihres Daches bietet sich eine Dachbeschichtung aus hochwertigem Flüssigkunststoff an. Das Verfahren ist sowohl für Privathäuser als auch für Industriebauten geeignet."
+      content: "Für eine dauerhaft sichere Abdichtung Ihres Daches bietet sich eine Dachbeschichtung aus hochwertigem Flüssigkunststoff an. Das Verfahren ist sowohl für Privathäuser als auch für Industriebauten geeignet und bietet ein Höchstmaß an Sicherheit und Wirtschaftlichkeit. Eine Dachsanierung mit Flüssigkunststoff ist schnell und effizient realisiert und bedeutet jahrelang ein sicheres Ergebnis.",
+      image: "public/Nanotech-Beschichtung.png"
     },
     {
       title: "Wärmedämmung",
-      description: "Energieeffizienz und Kostenersparnis",
+      subtitle: "Energiekosten sparen und den Geldbeutel entlasten",
       icon: Droplet,
-      content: "Eines der wichtigsten Faktoren für die Energiekosteneinsparung ist heutzutage die Fassade eines Hauses. Vor allem bei Altbauten ist der Energieverlust wegen einer schlecht isolierten Fassade erheblich."
+      content: "Eines der wichtigsten Faktoren für die Energiekosteneinsparung ist heutzutage die Fassade eines Hauses. Vor allem bei Altbauten ist der Energieverlust wegen einer schlecht isolierten Fassade ca. dreimal so hoch wie bei Neubauten. Bei einer Sanierung kann also nicht nur neue Farbe, sondern auch zeitgleich Maßnahmen durchgeführt werden, die zur Reduzierung von Wärmeverlust beitragen.",
+      image: "public/Wärmedämmung.png"
     },
     {
       title: "Fassadenbeschichtung",
-      description: "Langzeitschutz mit 10 Jahren Garantie",
+      subtitle: "10 Jahre Garantie von Ihrem professionellen Partner",
       icon: Paintbrush,
-      content: "Wir verfügen über jahrelange Erfahrungen im Bereich Fassadenbeschichtung. Unsere selbst entwickelten, harzbasierten Spezialmaterialien bieten eine bessere Alternative zu herkömmlichen Lösungen."
+      content: "Wir von dachtuning.de verfügen über jahrelange Erfahrungen im Bereich Fassadenbeschichtung. Unsere selbst entwickelten, harzbasierten Spezialmaterialien bieten eine bessere Alternative zu Dispersionsfarben und sind für mineralische Untergründe optimal geeignet.",
+      image: "public/Fassadenbeschichtung.png"
     },
     {
       title: "Fassadensanierung",
-      description: "Komplette Restauration und Modernisierung",
+      subtitle: "Wir peppen Ihre Fassade wieder auf",
       icon: Building2,
-      content: "Weist eine Hausfassade sichtbare Schäden auf, ist es Zeit für eine komplette Fassadensanierung. Ein einfacher neuer Farbanstrich reicht hier nicht mehr aus."
+      content: "Weist eine Hausfassade sichtbare Schäden auf, ist es Zeit für eine komplette Fassadensanierung. Ein einfacher neuer Farbanstrich reicht hier nicht mehr, um die tiefer gehenden Probleme zu beheben.",
+      image: "public/Fassadensanierung.png"
+    },
+    {
+      title: "Fassadenreinigung",
+      subtitle: "Fassadenreinigung mit Profi-Versiegelung",
+      icon: Sparkles,
+      content: "Durch schädigende Einflüsse aus der Atmosphäre verliert die Außenfassade eines Hauses ihr gutes Aussehen. Luftschadstoffe wie Schwefeldioxid und nitrose Gase werden im Regenwasser gelöst und gelangen so auf die Oberfläche der Häuser. Auch feste Partikel wie Staub und Ruß können der Fassade mit den Jahren zusetzen.",
+      image: "public/Fassadenreinigung.png"
+    },
+    {
+      title: "Flüssigkunststoff",
+      subtitle: "Flüssigkunststoff als Beschichtung für Ihr Dach",
+      icon: Droplets,
+      content: "Bevor wir die Beschichtung auftragen, schauen wir uns den Untergrund des Daches genau an, denn dieser ist jedes Mal anders. Unsere Beschichtung wird nur auf Untergründe aufgetragen, die diese auch vollständig aufsaugen.",
+      image: "public/Fluessigkunststoff.png"
+    },
+    {
+      title: "Dachreinigung",
+      subtitle: "Dachreinigung mit anschließender Versiegelung",
+      icon: Home,
+      content: "Professionelle Dachreinigung mit modernen Verfahren und anschließender Versiegelung für lange Haltbarkeit und optimalen Schutz vor Verschmutzung und Witterungseinflüssen.",
+      image: "public/Dachreinigung.png"
     },
     {
       title: "Photovoltaik",
-      description: "Nachhaltige Energielösungen für die Zukunft",
+      subtitle: "Nach dem Dachtuning noch etwas für die Umwelt tun",
       icon: Sun,
-      content: "Das fossil-nukleare Energiezeitalter gehört in Deutschland immer mehr der Vergangenheit an. Photovoltaik wird in unserer nachhaltigen Energiezukunft immer wichtiger."
+      content: "Das fossil-nukleare Energiezeitalter gehört in Deutschland immer mehr der Vergangenheit an. Photovoltaik wird in unserer nachhaltigen Energiezukunft immer wichtiger und auch wir möchten unseren Beitrag für eine bessere Umwelt leisten.",
+      image: "public/Photovoltaik.png"
     }
   ];
 
@@ -79,29 +106,32 @@ export default function DachtuningSite() {
     <div className="min-h-screen bg-black">
       {/* Header */}
       <header className="border-b-4 border-orange-600 bg-gradient-to-b from-black to-zinc-900">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div className="relative">
+        <div className="container mx-auto px-4 py-4 md:py-6">
+          <div className="flex items-center justify-between gap-2 md:gap-4">
+            <div className="flex items-center gap-2 md:gap-4 min-w-0">
+              <div className="relative flex-shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-transparent rounded-full blur-xl" />
                 <img
-                  src="https://ext.same-assets.com/2232344383/2296446876.png"
+                  src="public/logo.png"
                   alt="Dachtuning Logo"
-                  className="relative z-10 h-16 w-16"
+                  className="relative z-10 h-12 w-12 md:h-16 md:w-16"
                 />
               </div>
-              <div>
-                <h1 className="text-4xl md:text-5xl text-white font-bold tracking-wide">
+              <div className="min-w-0">
+                <h1 className="text-2xl md:text-5xl text-white font-bold tracking-wide truncate">
                   Dachtuning.de
                 </h1>
-                <p className="text-zinc-400 text-xs mt-1 font-mono uppercase tracking-widest">
-                  Seit 1999 • Professionell • Zuverlässig
+                <p className="text-zinc-400 text-xs mt-0.5 md:mt-1 font-mono uppercase tracking-widest truncate">
+                  Seit 1999 • Professionell
                 </p>
               </div>
             </div>
-            <button className="hidden md:flex items-center gap-2 px-6 py-3 bg-orange-600 text-white uppercase font-bold tracking-wider hover:bg-orange-700 transition-all rounded">
+            <button className="hidden sm:flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 bg-orange-600 text-white uppercase font-bold text-xs md:text-sm tracking-wider hover:bg-orange-700 transition-all rounded flex-shrink-0">
+              <PhoneCall className="w-4 h-4 md:w-5 md:h-5" />
+              <span className="hidden sm:inline">Kontakt</span>
+            </button>
+            <button className="sm:hidden flex items-center justify-center w-10 h-10 bg-orange-600 text-white hover:bg-orange-700 transition-all rounded flex-shrink-0">
               <PhoneCall className="w-5 h-5" />
-              Kontakt
             </button>
           </div>
         </div>
@@ -110,11 +140,11 @@ export default function DachtuningSite() {
       {/* Navigation Bar */}
       <nav className="bg-zinc-900 border-b-2 border-zinc-800 sticky top-0 z-50">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center gap-0 overflow-x-auto">
+          <div className="flex items-center justify-center gap-0 overflow-x-auto scrollbar-hide">
             {["Startseite", "Leistungen", "Dachtuning", "Über uns", "Regionen", "Galerie", "Kontakt"].map((item) => (
               <button
                 key={item}
-                className="px-4 py-4 text-zinc-300 hover:bg-orange-600/20 hover:text-orange-400 transition-colors uppercase text-xs font-bold tracking-wider whitespace-nowrap border-r border-zinc-800 last:border-r-0"
+                className="px-2 md:px-4 py-3 md:py-4 text-zinc-300 hover:bg-orange-600/20 hover:text-orange-400 transition-colors uppercase text-xs font-bold tracking-wider whitespace-nowrap border-r border-zinc-800 last:border-r-0"
               >
                 {item}
               </button>
@@ -196,20 +226,32 @@ export default function DachtuningSite() {
             {services.map((service, idx) => {
               const Icon = service.icon;
               return (
-                <div key={idx} className="group bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 rounded-lg p-6 hover:border-orange-600 transition-all hover:shadow-xl">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="p-3 bg-orange-600/20 rounded-lg flex-shrink-0">
-                      <Icon className="w-6 h-6 text-orange-500" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl text-white font-bold mb-1">{service.title}</h3>
-                      <p className="text-xs text-orange-500 uppercase tracking-wider font-mono">{service.description}</p>
-                    </div>
+                <div key={idx} className="group bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 rounded-lg overflow-hidden hover:border-orange-600 transition-all hover:shadow-xl">
+                  <div className="h-48 bg-zinc-800 overflow-hidden relative">
+                    <img
+                      src={service.image.replace('public/images/', 'public/')}
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                      }}
+                    />
                   </div>
-                  <p className="text-zinc-400 text-sm leading-relaxed mb-4">{service.content}</p>
-                  <button className="w-full px-4 py-2 bg-orange-600 text-white text-xs uppercase font-bold tracking-wider hover:bg-orange-700 transition-colors rounded">
-                    Mehr Erfahren
-                  </button>
+                  <div className="p-6">
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="p-3 bg-orange-600/20 rounded-lg flex-shrink-0">
+                        <Icon className="w-6 h-6 text-orange-500" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl text-white font-bold mb-1">{service.title}</h3>
+                        <p className="text-xs text-orange-500 uppercase tracking-wider font-mono">{service.subtitle}</p>
+                      </div>
+                    </div>
+                    <p className="text-zinc-400 text-sm leading-relaxed mb-4">{service.content}</p>
+                    <button className="w-full px-4 py-2 bg-orange-600 text-white text-xs uppercase font-bold tracking-wider hover:bg-orange-700 transition-colors rounded">
+                      Mehr Erfahren
+                    </button>
+                  </div>
                 </div>
               );
             })}
