@@ -30,63 +30,63 @@ export default function DachtuningSite() {
       subtitle: "Eine Dachsanierung die sich sehen lassen kann",
       icon: Home,
       content: "Wer einen Altbau kauft oder besitzt, steht irgendwann vor der Frage wann eine Dachsanierung fällig ist. Es gibt einige Anzeichen dafür, wann das der Fall sein sollte. Offensichtliche wie abgefallene oder verrutschte Dachziegel und auch weniger auffällige wie Schimmelbefall, morsche Bestandteile oder nicht fest sitzende Ziegel.",
-      image: "public/Dachsanierung.png"
+      image: "/Dachsanierung.png"
     },
     {
       title: "Nanotech-Beschichtung",
       subtitle: "Nanotechnik als Beschichtung für Ihr Dach",
       icon: Shield,
       content: "Für eine dauerhaft sichere Abdichtung Ihres Daches bietet sich eine Dachbeschichtung aus hochwertigem Flüssigkunststoff an. Das Verfahren ist sowohl für Privathäuser als auch für Industriebauten geeignet und bietet ein Höchstmaß an Sicherheit und Wirtschaftlichkeit. Eine Dachsanierung mit Flüssigkunststoff ist schnell und effizient realisiert und bedeutet jahrelang ein sicheres Ergebnis.",
-      image: "public/Nanotech-Beschichtung.png"
+      image: "/Nanotech-Beschichtung.png"
     },
     {
       title: "Wärmedämmung",
       subtitle: "Energiekosten sparen und den Geldbeutel entlasten",
       icon: Droplet,
       content: "Eines der wichtigsten Faktoren für die Energiekosteneinsparung ist heutzutage die Fassade eines Hauses. Vor allem bei Altbauten ist der Energieverlust wegen einer schlecht isolierten Fassade ca. dreimal so hoch wie bei Neubauten. Bei einer Sanierung kann also nicht nur neue Farbe, sondern auch zeitgleich Maßnahmen durchgeführt werden, die zur Reduzierung von Wärmeverlust beitragen.",
-      image: "public/Wärmedämmung.png"
+      image: "/Wärmedämmung.png"
     },
     {
       title: "Fassadenbeschichtung",
       subtitle: "10 Jahre Garantie von Ihrem professionellen Partner",
       icon: Paintbrush,
       content: "Wir von dachtuning.de verfügen über jahrelange Erfahrungen im Bereich Fassadenbeschichtung. Unsere selbst entwickelten, harzbasierten Spezialmaterialien bieten eine bessere Alternative zu Dispersionsfarben und sind für mineralische Untergründe optimal geeignet.",
-      image: "public/Fassadenbeschichtung.png"
+      image: "/Fassadenbeschichtung.png"
     },
     {
       title: "Fassadensanierung",
       subtitle: "Wir peppen Ihre Fassade wieder auf",
       icon: Building2,
       content: "Weist eine Hausfassade sichtbare Schäden auf, ist es Zeit für eine komplette Fassadensanierung. Ein einfacher neuer Farbanstrich reicht hier nicht mehr, um die tiefer gehenden Probleme zu beheben.",
-      image: "public/Fassadensanierung.png"
+      image: "/Fassadensanierung.png"
     },
     {
       title: "Fassadenreinigung",
       subtitle: "Fassadenreinigung mit Profi-Versiegelung",
       icon: Sparkles,
       content: "Durch schädigende Einflüsse aus der Atmosphäre verliert die Außenfassade eines Hauses ihr gutes Aussehen. Luftschadstoffe wie Schwefeldioxid und nitrose Gase werden im Regenwasser gelöst und gelangen so auf die Oberfläche der Häuser. Auch feste Partikel wie Staub und Ruß können der Fassade mit den Jahren zusetzen.",
-      image: "public/Fassadenreinigung.png"
+      image: "/Fassadenreinigung.png"
     },
     {
       title: "Flüssigkunststoff",
       subtitle: "Flüssigkunststoff als Beschichtung für Ihr Dach",
       icon: Droplets,
       content: "Bevor wir die Beschichtung auftragen, schauen wir uns den Untergrund des Daches genau an, denn dieser ist jedes Mal anders. Unsere Beschichtung wird nur auf Untergründe aufgetragen, die diese auch vollständig aufsaugen.",
-      image: "public/Fluessigkunststoff.png"
+      image: "/Fluessigkunststoff.png"
     },
     {
       title: "Dachreinigung",
       subtitle: "Dachreinigung mit anschließender Versiegelung",
       icon: Home,
       content: "Professionelle Dachreinigung mit modernen Verfahren und anschließender Versiegelung für lange Haltbarkeit und optimalen Schutz vor Verschmutzung und Witterungseinflüssen.",
-      image: "public/Dachreinigung.png"
+      image: "/Dachreinigung.png"
     },
     {
       title: "Photovoltaik",
       subtitle: "Nach dem Dachtuning noch etwas für die Umwelt tun",
       icon: Sun,
       content: "Das fossil-nukleare Energiezeitalter gehört in Deutschland immer mehr der Vergangenheit an. Photovoltaik wird in unserer nachhaltigen Energiezukunft immer wichtiger und auch wir möchten unseren Beitrag für eine bessere Umwelt leisten.",
-      image: "public/Photovoltaik.png"
+      image: "/Photovoltaik.png"
     }
   ];
 
@@ -114,7 +114,7 @@ export default function DachtuningSite() {
               <div className="relative flex-shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-transparent rounded-full blur-xl" />
                 <img
-                  src="public/logo.png"
+                  src="/logo.png"
                   alt="Dachtuning Logo"
                   className="relative z-10 h-12 w-12 md:h-16 md:w-16"
                 />
@@ -231,7 +231,7 @@ export default function DachtuningSite() {
                 <div key={idx} className="group bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 rounded-lg overflow-hidden hover:border-orange-600 transition-all hover:shadow-xl">
                   <div className="h-48 bg-zinc-800 overflow-hidden relative">
                     <img
-                      src={service.image.replace('public/images/', 'public/')}
+                      src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       onError={(e) => {
