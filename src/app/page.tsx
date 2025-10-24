@@ -1,4 +1,6 @@
-'use client';
+<button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider">
+                Kostenlose Beratung
+              </button>'use client';
 
 import { Play, Home, Shield, Droplet, Paintbrush, Building2, Sun, PhoneCall, Mail, MapPin, Clock, FileText, Wrench, Users, Award, Sparkles, Droplets, CheckCircle, Star, ArrowRight, Phone } from "lucide-react";
 import { useState } from "react";
@@ -302,7 +304,7 @@ export default function DachtuningSite() {
                       ))}
                     </div>
                     <button className="w-full px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white text-xs uppercase font-bold tracking-wider hover:shadow-lg hover:shadow-orange-600/50 transition-all rounded hover:from-orange-700 hover:to-orange-600 flex items-center justify-center gap-2">
-                      Details <ArrowRight className="w-3 h-3" />
+                      Mehr Erfahren <ArrowRight className="w-3 h-3" />
                     </button>
                   </div>
                 </div>
@@ -398,11 +400,18 @@ export default function DachtuningSite() {
             </div>
             <h3 className="text-3xl text-white font-bold text-center" style={{ fontFamily: 'Georgia, serif' }}>Dachtuning.de</h3>
             <p className="text-zinc-400 text-sm mt-2 font-mono uppercase tracking-widest text-center">Professionelle Dachsanierung seit 1999 • 26 Jahre Erfahrung</p>
+            
+            {/* Company Philosophy */}
+            <div className="mt-8 max-w-2xl text-center">
+              <p className="text-zinc-300 text-sm leading-relaxed">
+                <span className="text-orange-500 font-bold">Tradition. Vertrauen. Qualität.</span> Seit über 26 Jahren steht Dachtuning für handwerkliche Excellence und persönliche Zuverlässigkeit. Als Familienunternehmen verstehen wir Dachsanierung nicht als kurzfristige Lösung, sondern als langfristige Investition in Ihre Immobilie. Jedes Projekt führen wir mit dem gleichen Engagement durch – mit höchsten Standards, transparenten Preisen und einer ehrlichen Beratung. Ihr Vertrauen ist unser wertvollstes Gut.
+              </p>
+            </div>
           </div>
 
           {/* Footer Links Grid */}
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
-            {/* Services */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Services & Solutions */}
             <div>
               <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
                 <Wrench className="w-5 h-5 text-orange-500" />
@@ -413,56 +422,40 @@ export default function DachtuningSite() {
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Nanotech-Beschichtung</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Fassadenarbeiten</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Wärmedämmung</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Dachreinigung</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Photovoltaik</a></li>
               </ul>
             </div>
 
-            {/* Information */}
-            <div>
-              <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
-                <FileText className="w-5 h-5 text-orange-500" />
-                Information
-              </h4>
-              <ul className="space-y-3 text-sm text-zinc-400">
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Über uns</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Referenzen</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">FAQ</a></li>
-              </ul>
-            </div>
-
-            {/* Company */}
+            {/* Company & Information */}
             <div>
               <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
                 <Users className="w-5 h-5 text-orange-500" />
                 Unternehmen
               </h4>
               <ul className="space-y-3 text-sm text-zinc-400">
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Unternehmensgeschichte</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Über uns</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Unser Team</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Referenzen & Portfolio</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Standorte</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Karriere</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Partner</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Blog & Tipps</a></li>
               </ul>
             </div>
 
-            {/* Contact */}
+            {/* Support & Legal */}
             <div>
               <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
                 <Award className="w-5 h-5 text-orange-500" />
-                Kontakt
+                Service & Rechtliches
               </h4>
               <ul className="space-y-3 text-sm text-zinc-400">
-                <li className="flex items-start gap-2">
-                  <Phone className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                  <span>Kostenlose Beratung</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Mail className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                  <a href="mailto:info@dachtuning.de" className="hover:text-orange-500 transition-colors">info@dachtuning.de</a>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Clock className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                  <span>Mo-Fr 8:00 - 18:00 Uhr</span>
-                </li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Häufig gestellte Fragen</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Angebotsanfrage</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Wartungsservice</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Datenschutz</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Impressum</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">AGB</a></li>
               </ul>
             </div>
           </div>
