@@ -202,6 +202,16 @@ export default function DachtuningSite() {
             </div>
           </div>
 
+          {/* Right side phone call box */}
+          <div className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 bg-gradient-to-br from-orange-600 to-orange-500 rounded-lg p-6 md:p-8 shadow-2xl hover:shadow-orange-600/50 transition-all hidden md:flex flex-col items-center justify-center text-center max-w-xs">
+            <p className="text-white text-xs uppercase tracking-wider font-bold mb-2">Deutschlandweit Kostenlos</p>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <PhoneCall className="w-6 h-6 text-white" />
+              <p className="text-white text-2xl font-bold">0800 3228864</p>
+            </div>
+            <p className="text-white/90 text-xs">Anrufen und sofort Angebot erhalten!</p>
+          </div>
+
           {/* Video Section */}
           <div className="grid md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
             {videos.map((video, idx) => (
