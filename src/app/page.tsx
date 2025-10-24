@@ -141,7 +141,7 @@ export default function DachtuningSite() {
                 />
               </div>
               <div className="min-w-0">
-                <h1 className="text-2xl md:text-4xl text-white font-normal tracking-wide truncate" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700', letterSpacing: '0.05em' }}>
+                <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wide truncate" style={{ fontFamily: 'Georgia, serif' }}>
                   Dachtuning.de
                 </h1>
                 <p className="text-zinc-400 text-xs mt-0.5 md:mt-1 font-mono uppercase tracking-widest truncate">
@@ -189,14 +189,17 @@ export default function DachtuningSite() {
             <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
               🏆 Seit 26 Jahren Ihre Vertrauensperson
             </div>
-            <h2 className="text-5xl md:text-7xl mb-6 text-white font-bold tracking-tight">
+            <h2 className="text-5xl md:text-7xl mb-6 text-white font-bold tracking-tight" style={{ fontFamily: 'Georgia, serif' }}>
               Dachtuning
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-6 max-w-3xl mx-auto">
               Professionelle Dachsanierung und Fassadenarbeiten für Bremen, Leipzig, Paderborn und Schwaan
             </p>
             <div className="flex items-center justify-center gap-6 mt-8 flex-wrap">
-              <button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider">
+              <button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider flex items-center gap-2">
+                Kostenlose Beratung <ArrowRight className="w-4 h-4" />
+              </button>
+              <button className="px-8 py-3 border-2 border-orange-600 text-orange-400 font-bold rounded hover:bg-orange-600/10 transition-all uppercase text-sm tracking-wider">
                 Mehr erfahren
               </button>
             </div>
@@ -250,7 +253,7 @@ export default function DachtuningSite() {
       <section className="py-16 md:py-24 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl text-white mb-4" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700' }}>
+            <h2 className="text-5xl md:text-6xl text-white font-bold mb-4" style={{ fontFamily: 'Georgia, serif' }}>
               Unsere Leistungen
             </h2>
             <div className="h-1 w-40 bg-gradient-to-r from-transparent via-orange-600 to-transparent mx-auto" />
@@ -313,7 +316,7 @@ export default function DachtuningSite() {
       <section className="py-16 md:py-24 bg-gradient-to-b from-black to-zinc-900 border-b-4 border-orange-600">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl text-white mb-4" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700' }}>
+            <h2 className="text-5xl md:text-6xl text-white font-bold mb-4" style={{ fontFamily: 'Georgia, serif' }}>
               Was unsere Kunden sagen
             </h2>
             <div className="h-1 w-40 bg-gradient-to-r from-transparent via-orange-600 to-transparent mx-auto" />
@@ -339,7 +342,7 @@ export default function DachtuningSite() {
       <section className="py-16 md:py-24 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl text-white mb-4" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700' }}>
+            <h2 className="text-5xl md:text-6xl text-white font-bold mb-4" style={{ fontFamily: 'Georgia, serif' }}>
               Unsere Standorte
             </h2>
             <div className="h-1 w-40 bg-gradient-to-r from-transparent via-orange-600 to-transparent mx-auto" />
@@ -365,7 +368,7 @@ export default function DachtuningSite() {
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl" />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl text-white font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl text-white font-bold mb-4" style={{ fontFamily: 'Georgia, serif' }}>
             Bereit für Ihr Dachprojekt?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
@@ -393,7 +396,7 @@ export default function DachtuningSite() {
                 }}
               />
             </div>
-            <h3 className="text-3xl text-white font-bold text-center">Dachtuning.de</h3>
+            <h3 className="text-3xl text-white font-bold text-center" style={{ fontFamily: 'Georgia, serif' }}>Dachtuning.de</h3>
             <p className="text-zinc-400 text-sm mt-2 font-mono uppercase tracking-widest text-center">Professionelle Dachsanierung seit 1999 • 26 Jahre Erfahrung</p>
             
             {/* Company Philosophy */}
