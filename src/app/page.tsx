@@ -117,8 +117,8 @@ export default function DachtuningSite() {
   ];
 
   const testimonials = [
-    { name: "Familie Petersen, Bremen", rating: 5, text: "Hervorragende Arbeit! Das Dach sieht wie neu aus." },
-    { name: "Unternehmen Weber, Leipzig", rating: 5, text: "Professionell, zuverlässig und preiswert. Sehr empfehlenswert!" },
+    { name: "Familie Müller, Bremen", rating: 5, text: "Hervorragende Arbeit! Das Dach sieht wie neu aus." },
+    { name: "Unternehmen Schmidt, Leipzig", rating: 5, text: "Professionell, zuverlässig und preiswert. Sehr empfehlenswert!" },
     { name: "Familie Hansen, Paderborn", rating: 5, text: "Schnelle Abwicklung, großartige Ergebnisse. Danke!" }
   ];
 
@@ -460,8 +460,8 @@ export default function DachtuningSite() {
             <div className="flex items-start gap-4">
               <PhoneCall className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
               <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">Telefonische Beratung</p>
-                <p className="text-white font-bold text-lg">+49 (0) 123 456789</p>
+                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">Deutschlandweit Kostenlos</p>
+                <p className="text-white font-bold text-lg">0800 3228864</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
