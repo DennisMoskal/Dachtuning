@@ -114,7 +114,7 @@ export default function DachtuningSite() {
               <div className="relative flex-shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-transparent rounded-full blur-xl" />
                 <img
-                  src="/logo.png"
+                  src="/Logo.png"
                   alt="Dachtuning Logo"
                   className="relative z-10 h-12 w-12 md:h-16 md:w-16 object-contain"
                   onError={(e) => {
@@ -294,7 +294,7 @@ export default function DachtuningSite() {
             <div className="relative mb-6">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-transparent rounded-full blur-xl" />
               <img
-                src="/logo.png"
+                src="/Logo.png"
                 alt="Dachtuning Logo"
                 className="relative z-10 h-16 w-16 md:h-20 md:w-20 object-contain"
                 onError={(e) => {
