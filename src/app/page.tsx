@@ -189,7 +189,7 @@ export default function DachtuningSite() {
             <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
               🏆 Seit 26 Jahren Ihre Vertrauensperson
             </div>
-            <h2 className="text-5xl md:text-7xl mb-6 text-white tracking-tight" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700' }}>
+            <h2 className="text-5xl md:text-7xl mb-6 text-white font-bold tracking-tight">
               Dachtuning
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-6 max-w-3xl mx-auto">
@@ -365,7 +365,7 @@ export default function DachtuningSite() {
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl" />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl text-white mb-4" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700' }}>
+          <h2 className="text-4xl md:text-5xl text-white font-bold mb-4">
             Bereit für Ihr Dachprojekt?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
@@ -393,7 +393,7 @@ export default function DachtuningSite() {
                 }}
               />
             </div>
-            <h3 className="text-3xl text-white text-center" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700' }}>Dachtuning.de</h3>
+            <h3 className="text-3xl text-white font-bold text-center">Dachtuning.de</h3>
             <p className="text-zinc-400 text-sm mt-2 font-mono uppercase tracking-widest text-center">Professionelle Dachsanierung seit 1999 • 26 Jahre Erfahrung</p>
             
             {/* Company Philosophy */}
