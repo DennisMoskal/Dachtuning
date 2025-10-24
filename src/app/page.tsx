@@ -1,3 +1,5 @@
+'use client';
+
 import { Play, Home, Shield, Droplet, Paintbrush, Building2, Sun, PhoneCall, Mail, MapPin, Clock, FileText, Wrench, Users, Award, Sparkles, Droplets } from "lucide-react";
 
 export default function DachtuningSite() {
