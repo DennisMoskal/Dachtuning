@@ -255,7 +255,7 @@ export default function DachtuningSite() {
             </h2>
             <div className="h-1 w-40 bg-gradient-to-r from-transparent via-orange-600 to-transparent mx-auto" />
             <p className="text-zinc-400 mt-6 max-w-2xl mx-auto">
-              Hochwertige Lösungen für Dach- und Fassadenarbeiten mit über 25 Jahren Erfahrung
+              Hochwertige Lösungen für Dach- und Fassadenarbeiten mit über 25 Jahren Erfahrung.
             </p>
           </div>
 
