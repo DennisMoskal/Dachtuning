@@ -435,4 +435,81 @@ export default function DachtuningSite() {
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Über uns</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Unser Team</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Referenzen & Portfolio</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">Standorte</a></li
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Standorte</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Karriere</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Blog & Tipps</a></li>
+              </ul>
+            </div>
+
+            {/* Support & Legal */}
+            <div>
+              <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
+                <Award className="w-5 h-5 text-orange-500" />
+                Service & Rechtliches
+              </h4>
+              <ul className="space-y-3 text-sm text-zinc-400">
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Häufig gestellte Fragen</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Angebotsanfrage</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Wartungsservice</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Datenschutz</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">Impressum</a></li>
+                <li><a href="#" className="hover:text-orange-500 transition-colors">AGB</a></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Contact Info Bar */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12 p-6 md:p-8 bg-gradient-to-r from-orange-600/10 to-transparent rounded-xl border-2 border-orange-600/30">
+            <div className="flex items-start gap-4">
+              <PhoneCall className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+              <div>
+                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">Telefonische Beratung</p>
+                <p className="text-white font-bold text-lg">+49 (0) 123 456789</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <Mail className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+              <div>
+                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">E-Mail</p>
+                <p className="text-white font-bold">info@dachtuning.de</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <Clock className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+              <div>
+                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">Verfügbarkeit</p>
+                <p className="text-white font-bold">Mo-Fr 8:00 - 18:00 Uhr</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Footer */}
+          <div className="border-t border-zinc-800 pt-8">
+            <div className="flex flex-col md:flex-row items-center justify-between mb-6">
+              <div className="text-center md:text-left mb-4 md:mb-0">
+                <p className="text-zinc-400 text-xs font-mono uppercase tracking-wider">
+                  © 1999 - 2025 Dachtuning.de • Alle Rechte vorbehalten
+                </p>
+                <p className="text-zinc-500 text-xs mt-2">
+                  Familie im Betrieb • 26 Jahre erfolgreiche Handwerkskunst • TÜV zertifiziert
+                </p>
+              </div>
+              <div className="flex items-center gap-6 text-xs text-zinc-500">
+                <a href="#" className="hover:text-orange-500 transition-colors font-bold">Datenschutz</a>
+                <span className="text-zinc-700">•</span>
+                <a href="#" className="hover:text-orange-500 transition-colors font-bold">Impressum</a>
+                <span className="text-zinc-700">•</span>
+                <a href="#" className="hover:text-orange-500 transition-colors font-bold">AGB</a>
+              </div>
+            </div>
+            <div className="text-center pt-6 border-t border-zinc-800">
+              <p className="text-zinc-600 text-xs font-mono">
+                🇩🇪 Made with ❤️ in Germany • Vertrauenswürdig seit 1999
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
