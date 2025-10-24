@@ -164,7 +164,7 @@ export default function DachtuningSite() {
               Dachtuning.de
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 uppercase tracking-widest font-bold mb-6">
-              Ihr professionelles Dachunternehmen für Bremen, Leipzig, Paderborn und Schwaan
+              Ihr professionelles Dachunternehmen
             </p>
             <div className="mt-8 flex items-center justify-center gap-4">
               <div className="h-1 w-20 bg-gradient-to-r from-transparent via-orange-600 to-transparent" />
