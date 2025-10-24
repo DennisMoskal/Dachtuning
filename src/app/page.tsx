@@ -117,8 +117,8 @@ export default function DachtuningSite() {
   ];
 
   const testimonials = [
-    { name: "Familie Müller, Bremen", rating: 5, text: "Hervorragende Arbeit! Das Dach sieht wie neu aus." },
-    { name: "Unternehmen Schmidt, Leipzig", rating: 5, text: "Professionell, zuverlässig und preiswert. Sehr empfehlenswert!" },
+    { name: "Familie Petersen, Bremen", rating: 5, text: "Hervorragende Arbeit! Das Dach sieht wie neu aus." },
+    { name: "Unternehmen Weber, Leipzig", rating: 5, text: "Professionell, zuverlässig und preiswert. Sehr empfehlenswert!" },
     { name: "Familie Hansen, Paderborn", rating: 5, text: "Schnelle Abwicklung, großartige Ergebnisse. Danke!" }
   ];
 
