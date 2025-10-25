@@ -194,20 +194,32 @@ export default function DachtuningSite() {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12 md:mb-20">
-            <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
-              🏆 Seit 26 Jahren Ihre Vertrauensperson
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mb-12 md:mb-20">
+            <div className="lg:col-span-2 text-center lg:text-left">
+              <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
+                🏆 Seit 26 Jahren Ihre Vertrauensperson
+              </div>
+              <h2 className="text-5xl md:text-7xl mb-6 text-white font-bold tracking-tight">
+                Dachtuning
+              </h2>
+              <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-6 max-w-3xl">
+                Professionelle Dachsanierung und Fassadenarbeiten für Bremen, Leipzig, Paderborn und Schwaan
+              </p>
+              <div className="flex items-center justify-center lg:justify-start gap-6 flex-wrap">
+                <button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider">
+                  Mehr erfahren
+                </button>
+              </div>
             </div>
-          <h2 className="text-5xl md:text-7xl mb-6 text-white font-bold tracking-tight">
-              Dachtuning
-            </h2>
-            <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-6 max-w-3xl mx-auto">
-              Professionelle Dachsanierung und Fassadenarbeiten für Bremen, Leipzig, Paderborn und Schwaan
-            </p>
-            <div className="flex items-center justify-center gap-6 mt-8 flex-wrap">
-              <button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider">
-                Mehr erfahren
-              </button>
+
+            {/* Right side phone call box */}
+            <div className="hidden lg:flex bg-gradient-to-br from-orange-600 to-orange-500 rounded-xl p-6 md:p-8 shadow-2xl hover:shadow-orange-600/50 transition-all flex-col items-center justify-center text-center sticky top-32">
+              <p className="text-white text-xs uppercase tracking-wider font-bold mb-3">Deutschlandweit Kostenlos</p>
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <PhoneCall className="w-6 h-6 text-white" />
+                <p className="text-white text-2xl font-bold">0800 3228864</p>
+              </div>
+              <p className="text-white/90 text-xs leading-tight">Anrufen und sofort<br />Angebot erhalten!</p>
             </div>
           </div>
           </div>
