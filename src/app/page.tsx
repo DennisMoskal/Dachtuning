@@ -189,7 +189,7 @@ export default function DachtuningSite() {
         <div className="container mx-auto px-4 relative z-10 text-center">
           {/* Badge */}
           <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
-            🏆 Seit 26 Jahren Ihre Vertrauensperson
+            🏆 Seit 26 Jahren Ihr vertrauenswürdiger Partner
           </div>
 
           {/* Logo + Schriftzug perfekt zentriert */}
@@ -220,7 +220,7 @@ export default function DachtuningSite() {
 
           {/* Untertitel */}
           <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-8 max-w-3xl mx-auto">
-            Professionelle Dachsanierung und Fassadenarbeiten für Bremen, Leipzig, Paderborn und Schwaan
+            Professionelle Dachsanierung und Fassadenarbeiten in Bremen, Leipzig, Paderborn und Schwaan
           </p>
 
           {/* Button */}
