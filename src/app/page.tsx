@@ -179,57 +179,88 @@ export default function DachtuningSite() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-16 md:py-32 border-b-4 border-orange-600 bg-gradient-to-br from-zinc-900 via-black to-black overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12 md:mb-20">
-            <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
-              🏆 Seit 26 Jahren Ihre Vertrauensperson
-            </div>
-          <h2 className="text-5xl md:text-7xl mb-6 text-white font-bold tracking-tight">
-              Dachtuning
-            </h2>
-            <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-6 max-w-3xl mx-auto">
-              Professionelle Dachsanierung und Fassadenarbeiten für Bremen, Leipzig, Paderborn und Schwaan
-            </p>
-            <div className="flex items-center justify-center gap-6 mt-8 flex-wrap">
-              <button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider">
-                Mehr erfahren
-              </button>
-            </div>
-          </div>
+<section className="relative py-16 md:py-32 border-b-4 border-orange-600 bg-gradient-to-br from-zinc-900 via-black to-black overflow-hidden">
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
+    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
+  </div>
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="text-center mb-12 md:mb-20">
+      <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
+        🏆 Seit 26 Jahren Ihre Vertrauensperson
+      </div>
 
-          {/* Video Section */}
-          <div className="grid md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
-            {videos.map((video, idx) => (
-              <div key={idx} className="group relative rounded-xl overflow-hidden shadow-2xl hover:shadow-orange-600/50 transition-all hover:scale-105 cursor-pointer border border-orange-600/20">
-                <div className="relative aspect-video bg-zinc-900">
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent group-hover:from-black/40 transition-colors flex items-center justify-center">
-                    <div className="w-20 h-20 rounded-full bg-orange-600 flex items-center justify-center group-hover:scale-125 transition-transform shadow-2xl">
-                      <Play className="w-10 h-10 text-white fill-white ml-1" />
-                    </div>
-                  </div>
-                  <div className="absolute top-4 right-4 bg-black/90 px-3 py-1 rounded-lg text-xs text-white font-mono font-bold">
-                    {video.duration}
-                  </div>
-                </div>
-                <div className="p-4 bg-gradient-to-b from-zinc-800 to-black border-t border-orange-600/20">
-                  <h3 className="text-white font-bold text-sm leading-snug mb-2">{video.title}</h3>
-                  <p className="text-zinc-400 text-xs">{video.description}</p>
-                </div>
+      {/* Logo + Schriftzug */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6">
+        {/* Logo mit goldenem Schein */}
+        <div className="relative flex-shrink-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-500/40 to-transparent rounded-full blur-lg" />
+          <img
+            src="/Logo.png"
+            alt="Dachtuning Logo"
+            className="relative z-10 h-16 w-16 md:h-24 md:w-24 object-contain drop-shadow-lg"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        </div>
+
+        {/* Schriftzug */}
+        <h2
+          className="text-5xl md:text-7xl text-white font-bold tracking-tight"
+          style={{
+            fontFamily: 'var(--font-unifraktur)',
+            fontWeight: '700',
+            letterSpacing: '0.05em',
+          }}
+        >
+          Dachtuning
+        </h2>
+      </div>
+
+      <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-6 max-w-3xl mx-auto">
+        Professionelle Dachsanierung und Fassadenarbeiten für Bremen, Leipzig, Paderborn und Schwaan
+      </p>
+      <div className="flex items-center justify-center gap-6 mt-8 flex-wrap">
+        <button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider">
+          Mehr erfahren
+        </button>
+      </div>
+    </div>
+
+    {/* Video Section */}
+    <div className="grid md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
+      {videos.map((video, idx) => (
+        <div
+          key={idx}
+          className="group relative rounded-xl overflow-hidden shadow-2xl hover:shadow-orange-600/50 transition-all hover:scale-105 cursor-pointer border border-orange-600/20"
+        >
+          <div className="relative aspect-video bg-zinc-900">
+            <img
+              src={video.thumbnail}
+              alt={video.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent group-hover:from-black/40 transition-colors flex items-center justify-center">
+              <div className="w-20 h-20 rounded-full bg-orange-600 flex items-center justify-center group-hover:scale-125 transition-transform shadow-2xl">
+                <Play className="w-10 h-10 text-white fill-white ml-1" />
               </div>
-            ))}
+            </div>
+            <div className="absolute top-4 right-4 bg-black/90 px-3 py-1 rounded-lg text-xs text-white font-mono font-bold">
+              {video.duration}
+            </div>
+          </div>
+          <div className="p-4 bg-gradient-to-b from-zinc-800 to-black border-t border-orange-600/20">
+            <h3 className="text-white font-bold text-sm leading-snug mb-2">
+              {video.title}
+            </h3>
+            <p className="text-zinc-400 text-xs">{video.description}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Guarantees Section */}
       <section className="py-12 md:py-16 bg-black border-b-2 border-orange-600">
