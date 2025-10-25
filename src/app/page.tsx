@@ -1,6 +1,6 @@
 'use client';
 
-import { Play, Home, Shield, Droplet, Paintbrush, Building2, Sun, PhoneCall, Mail, MapPin, Clock, FileText, Wrench, Users, Award, Sparkles, Droplets, CheckCircle, Star, ArrowRight, Phone } from "lucide-react";
+import { Play, Home, Shield, Droplet, Paintbrush, Building2, Sun, PhoneCall, Mail, MapPin, Clock, Wrench, Users, Award, Sparkles, Droplets, CheckCircle, Star } from "lucide-react";
 import { useState } from "react";
 
 export default function DachtuningSite() {
@@ -117,8 +117,8 @@ export default function DachtuningSite() {
   ];
 
   const testimonials = [
-    { name: "Familie Müller, Bremen", rating: 5, text: "Hervorragende Arbeit! Das Dach sieht wie neu aus." },
-    { name: "Unternehmen Schmidt, Leipzig", rating: 5, text: "Professionell, zuverlässig und preiswert. Sehr empfehlenswert!" },
+    { name: "Familie Petersen, Bremen", rating: 5, text: "Hervorragende Arbeit! Das Dach sieht wie neu aus." },
+    { name: "Unternehmen Weber, Leipzig", rating: 5, text: "Professionell, zuverlässig und preiswert. Sehr empfehlenswert!" },
     { name: "Familie Hansen, Paderborn", rating: 5, text: "Schnelle Abwicklung, großartige Ergebnisse. Danke!" }
   ];
 
@@ -160,15 +160,6 @@ export default function DachtuningSite() {
             </div>
           </div>
         </div>
-
-        {/* Right side phone call box */}
-        <div className="hidden md:flex absolute right-4 lg:right-8 top-32 bg-gradient-to-br from-orange-600 to-orange-500 rounded-xl p-6 md:p-8 shadow-2xl hover:shadow-orange-600/50 transition-all flex-col items-center justify-center text-center w-64 z-20">
-          <p className="text-white text-xs uppercase tracking-wider font-bold mb-3">Deutschlandweit Kostenlos</p>
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <PhoneCall className="w-6 h-6 text-white" />
-            <p className="text-white text-2xl font-bold">0800 3228864</p>
-          </div>
-          <p className="text-white/90 text-xs leading-tight">Anrufen und sofort<br />Angebot erhalten!</p>
       </header>
 
       {/* Navigation Bar */}
@@ -194,7 +185,7 @@ export default function DachtuningSite() {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mb-12 md:mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12 md:mb-20">
             <div className="lg:col-span-2 text-center lg:text-left">
               <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
                 🏆 Seit 26 Jahren Ihre Vertrauensperson
@@ -212,16 +203,14 @@ export default function DachtuningSite() {
               </div>
             </div>
 
-            {/* Right side phone call box */}
-            <div className="hidden lg:flex bg-gradient-to-br from-orange-600 to-orange-500 rounded-xl p-6 md:p-8 shadow-2xl hover:shadow-orange-600/50 transition-all flex-col items-center justify-center text-center sticky top-32">
+            <div className="hidden lg:flex bg-gradient-to-br from-orange-600 to-orange-500 rounded-xl p-6 md:p-8 shadow-2xl hover:shadow-orange-600/50 transition-all flex-col items-center justify-center text-center sticky top-32 h-fit">
               <p className="text-white text-xs uppercase tracking-wider font-bold mb-3">Deutschlandweit Kostenlos</p>
               <div className="flex items-center justify-center gap-2 mb-4">
                 <PhoneCall className="w-6 h-6 text-white" />
                 <p className="text-white text-2xl font-bold">0800 3228864</p>
               </div>
-              <p className="text-white/90 text-xs leading-tight">Anrufen und sofort<br />Angebot erhalten!</p>
+              <p className="text-white/90 text-xs leading-tight">Anrufen und sofort Angebot erhalten!</p>
             </div>
-          </div>
           </div>
 
           {/* Video Section */}
@@ -370,7 +359,7 @@ export default function DachtuningSite() {
           <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {locations.map((location, idx) => (
               <div key={idx} className="bg-gradient-to-br from-zinc-900 to-black border-2 border-zinc-800 rounded-lg p-6 text-center hover:border-orange-600 transition-all hover:shadow-lg hover:shadow-orange-600/20">
-                <div className="w-16 h-16 mx-auto mb-4 bg-orange-600/20 rounded-full flex items-center justify-center group-hover:bg-orange-600/40 transition-colors">
+                <div className="w-16 h-16 mx-auto mb-4 bg-orange-600/20 rounded-full flex items-center justify-center hover:bg-orange-600/40 transition-colors">
                   <MapPin className="w-8 h-8 text-orange-500" />
                 </div>
                 <h3 className="text-2xl text-white font-bold mb-2">{location.name}</h3>
@@ -402,7 +391,6 @@ export default function DachtuningSite() {
       {/* Footer */}
       <footer className="bg-black border-t-4 border-orange-600">
         <div className="container mx-auto px-4 py-16">
-          {/* Footer Top with Logo */}
           <div className="flex flex-col items-center justify-center mb-12 pb-12 border-b border-zinc-800">
             <div className="relative mb-6">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-600/30 to-transparent rounded-full blur-lg" />
@@ -418,7 +406,6 @@ export default function DachtuningSite() {
             <h3 className="text-3xl text-white font-bold text-center">Dachtuning.de</h3>
             <p className="text-zinc-400 text-sm mt-2 font-mono uppercase tracking-widest text-center">Professionelle Dachsanierung seit 1999 • 26 Jahre Erfahrung</p>
             
-            {/* Company Philosophy */}
             <div className="mt-8 max-w-2xl text-center">
               <p className="text-zinc-300 text-sm leading-relaxed">
                 <span className="text-orange-500 font-bold">Tradition. Vertrauen. Qualität.</span> Seit über 26 Jahren steht Dachtuning für handwerkliche Excellence und persönliche Zuverlässigkeit. Als Familienunternehmen verstehen wir Dachsanierung nicht als kurzfristige Lösung, sondern als langfristige Investition in Ihre Immobilie. Jedes Projekt führen wir mit dem gleichen Engagement durch – mit höchsten Standards, transparenten Preisen und einer ehrlichen Beratung. Ihr Vertrauen ist unser wertvollstes Gut.
@@ -426,9 +413,7 @@ export default function DachtuningSite() {
             </div>
           </div>
 
-          {/* Footer Links Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Services & Solutions */}
             <div>
               <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
                 <Wrench className="w-5 h-5 text-orange-500" />
@@ -444,7 +429,6 @@ export default function DachtuningSite() {
               </ul>
             </div>
 
-            {/* Company & Information */}
             <div>
               <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
                 <Users className="w-5 h-5 text-orange-500" />
@@ -460,7 +444,6 @@ export default function DachtuningSite() {
               </ul>
             </div>
 
-            {/* Support & Legal */}
             <div>
               <h4 className="text-lg text-white mb-6 uppercase font-bold tracking-wider flex items-center gap-2">
                 <Award className="w-5 h-5 text-orange-500" />
@@ -472,63 +455,4 @@ export default function DachtuningSite() {
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Wartungsservice</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Datenschutz</a></li>
                 <li><a href="#" className="hover:text-orange-500 transition-colors">Impressum</a></li>
-                <li><a href="#" className="hover:text-orange-500 transition-colors">AGB</a></li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Contact Info Bar */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12 p-6 md:p-8 bg-gradient-to-r from-orange-600/10 to-transparent rounded-xl border-2 border-orange-600/30">
-            <div className="flex items-start gap-4">
-              <PhoneCall className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
-              <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">Deutschlandweit Kostenlos</p>
-                <p className="text-white font-bold text-lg">0800 3228864</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Mail className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
-              <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">E-Mail</p>
-                <p className="text-white font-bold">info@dachtuning.de</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Clock className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
-              <div>
-                <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1 font-bold">Verfügbarkeit</p>
-                <p className="text-white font-bold">Mo-Fr 8:00 - 18:00 Uhr</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Footer */}
-          <div className="border-t border-zinc-800 pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between mb-6">
-              <div className="text-center md:text-left mb-4 md:mb-0">
-                <p className="text-zinc-400 text-xs font-mono uppercase tracking-wider">
-                  © 1999 - 2025 Dachtuning.de • Alle Rechte vorbehalten
-                </p>
-                <p className="text-zinc-500 text-xs mt-2">
-                  Familie im Betrieb • 26 Jahre erfolgreiche Handwerkskunst • TÜV zertifiziert
-                </p>
-              </div>
-              <div className="flex items-center gap-6 text-xs text-zinc-500">
-                <a href="#" className="hover:text-orange-500 transition-colors font-bold">Datenschutz</a>
-                <span className="text-zinc-700">•</span>
-                <a href="#" className="hover:text-orange-500 transition-colors font-bold">Impressum</a>
-                <span className="text-zinc-700">•</span>
-                <a href="#" className="hover:text-orange-500 transition-colors font-bold">AGB</a>
-              </div>
-            </div>
-            <div className="text-center pt-6 border-t border-zinc-800">
-              <p className="text-zinc-600 text-xs font-mono">
-                🇩🇪 Made with ❤️ in Germany • Vertrauenswürdig seit 1999
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
+                <li><a href="#" className="hover:
