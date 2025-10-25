@@ -178,23 +178,27 @@ export default function DachtuningSite() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+     {/* Hero Section */}
 <section className="relative py-16 md:py-32 border-b-4 border-orange-600 bg-gradient-to-br from-zinc-900 via-black to-black overflow-hidden">
+  {/* Hintergrundschein */}
   <div className="absolute inset-0 opacity-10">
     <div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
     <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
   </div>
+
   <div className="container mx-auto px-4 relative z-10">
     <div className="text-center mb-12 md:mb-20">
+
+      {/* Top Badge */}
       <div className="mb-4 inline-block px-4 py-2 bg-orange-600/20 border border-orange-600/40 rounded-full text-orange-400 text-xs font-bold uppercase tracking-wider">
         🏆 Seit 26 Jahren Ihre Vertrauensperson
       </div>
 
-      {/* Logo + Schriftzug */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6">
+      {/* Logo + Schriftzug zentriert */}
+      <div className="flex items-center justify-center gap-4 md:gap-6 mb-6">
         {/* Logo mit goldenem Schein */}
         <div className="relative flex-shrink-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-500/40 to-transparent rounded-full blur-lg" />
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-500/50 to-transparent rounded-full blur-xl" />
           <img
             src="/Logo.png"
             alt="Dachtuning Logo"
@@ -207,7 +211,7 @@ export default function DachtuningSite() {
 
         {/* Schriftzug */}
         <h2
-          className="text-5xl md:text-7xl text-white font-bold tracking-tight"
+          className="text-5xl md:text-7xl text-white font-bold tracking-tight flex items-center justify-center"
           style={{
             fontFamily: 'var(--font-unifraktur)',
             fontWeight: '700',
@@ -218,9 +222,12 @@ export default function DachtuningSite() {
         </h2>
       </div>
 
+      {/* Untertitel */}
       <p className="text-xl md:text-2xl text-zinc-300 font-semibold mb-6 max-w-3xl mx-auto">
         Professionelle Dachsanierung und Fassadenarbeiten für Bremen, Leipzig, Paderborn und Schwaan
       </p>
+
+      {/* Button */}
       <div className="flex items-center justify-center gap-6 mt-8 flex-wrap">
         <button className="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded hover:shadow-lg hover:shadow-orange-600/50 transition-all uppercase text-sm tracking-wider">
           Mehr erfahren
