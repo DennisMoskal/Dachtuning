@@ -128,7 +128,7 @@ export default function DachtuningSite() {
       <header className="border-b-4 border-orange-600 bg-gradient-to-b from-black to-zinc-900 sticky top-0 z-40">
         <div className="container mx-auto px-4 py-4 md:py-6">
           <div className="flex items-center justify-between gap-2 md:gap-4">
-            <div className="flex items-center gap-2 md:gap-4 min-w-0">
+            <div className="flex items-center gap-2 md:gap-4 min-w-0 flex-1">
               <div className="relative flex-shrink-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-600/30 to-transparent rounded-full blur-lg" />
                 <img
@@ -140,11 +140,11 @@ export default function DachtuningSite() {
                   }}
                 />
               </div>
-              <div className="min-w-0">
+              <div className="min-w-0 pr-2 sm:pr-0">
                 <h1 className="text-2xl md:text-4xl text-white font-bold tracking-wide truncate" style={{ fontFamily: 'var(--font-unifraktur)', fontWeight: '700', letterSpacing: '0.05em' }}>
                   Dachtuning.de
                 </h1>
-                <p className="text-zinc-400 text-xs mt-0.5 md:mt-1 font-mono uppercase tracking-widest truncate">
+                <p className="text-zinc-400 text-xs mt-0.5 md:mt-1 font-mono uppercase tracking-widest whitespace-normal">
                   Professionelle Dachsanierung seit 1999
                 </p>
               </div>
@@ -178,7 +178,7 @@ export default function DachtuningSite() {
         </div>
       </nav>
 
-    {/* Hero Section */}
+      {/* Hero Section */}
       <section className="relative py-20 md:py-32 border-b-4 border-orange-600 bg-gradient-to-br from-zinc-900 via-black to-black overflow-hidden">
         {/* Hintergrundschein */}
         <div className="absolute inset-0 opacity-10">
@@ -194,7 +194,7 @@ export default function DachtuningSite() {
 
           {/* Logo + Schriftzug perfekt zentriert */}
           <div className="flex flex-col items-center justify-center mb-6">
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
               {/* Logo mit Schein */}
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/50 to-transparent rounded-full blur-xl" />
@@ -207,7 +207,7 @@ export default function DachtuningSite() {
 
               {/* Schriftzug */}
               <h2
-                className="text-5xl md:text-7xl font-bold tracking-tight text-white"
+                className="text-5xl md:text-7xl font-bold tracking-tight text-white text-center"
                 style={{
                   fontFamily: 'var(--font-unifraktur)',
                   letterSpacing: '0.05em'
