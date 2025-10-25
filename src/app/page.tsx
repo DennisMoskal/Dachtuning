@@ -1,3 +1,4 @@
+'use client';
 import { Play, Home, Shield, Droplet, Paintbrush, Building2, Sun, PhoneCall, Mail, MapPin, Clock, Wrench, Users, Award, Sparkles, Droplets, CheckCircle, Star } from "lucide-react";
 import { useState } from "react";
 
